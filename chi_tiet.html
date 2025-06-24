@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sửa xe và rửa xe tại nhà</title>
+    <link rel="stylesheet" href="chitiet.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+        <div class="logo flex-col">
+            <a href="Trang_chu.html" title="Sửa xe và rửa xe tại nhà" rel="home">
+                <img src="logo.png" width="120" height="100" alt="Logo">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="Trang_chu.html">Trang Chủ</a>
+            <a href=dich_vu.html>Dịch Vụ</a>
+            <a href="Bang_gia.html">Bảng Giá</a>
+            <a href="Dat_lich.html">Đặt Lịch</a>
+            <a href="lien_he.html">Liên Hệ</a>
+        </div>
+        <div class="search-login">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm..." class="search-bar">
+            <button class="btn-search" id="searchBtn">Tìm Kiếm</button>
+        </div>
+    </div>
+    <main><h1>🔍 Tra cứu thông tin phương tiện</h1>
+  <input type="text" id="usesId" placeholder="Nhập mã người dùng" />
+  <input type="text" id="maPT" placeholder="Nhập mã phương tiện" />
+  <button class="btn-search" onclick="traCuu()">Tra cứu</button>
+
+  <div class="result" id="ketQua"></div></main>
+        <footer class="footer">
+            © 2025 Dịch Vụ Sửa Xe & Rửa Xe Tại Nhà. All rights reserved.
+        </footer>
+    </div>
+<script src="chiiet.js"></script>
+<script src="dvrx.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đánh Giá Dịch Vụ</title>
+  <link rel="stylesheet" href="danhgia.css">
+</head>
+<body>
+        <div class="navbar">
+        <div class="logo flex-col">
+            <a href="Trang_chu.html" title="Sửa xe và rửa xe tại nhà" rel="home">
+                <img src="logo.png" width="120" height="100" alt="Logo">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="Trang_chu.html">Trang Chủ</a>
+            <a href=dich_vu.html>Dịch Vụ</a>
+            <a href="Bang_gia.html">Bảng Giá</a>
+            <a href="Dat_lich.html">Đặt Lịch</a>
+            <a href="lien_he.html">Liên Hệ</a>
+        </div>
+        <div class="search-login">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm..." class="search-bar">
+            <button class="btn-search" id="searchBtn">Tìm Kiếm</button>
+        </div>
+    </div>
+
+  <main class="review-container">
+    <h1>Đánh Giá Dịch Vụ ⭐</h1>
+
+    <form id="reviewForm">
+      <label for="uses_id">Mã người dùng:</label>
+      <input type="text" id="uses_id" name="uses_id" required>
+
+      <label for="ma_dh">Mã đơn hàng:</label>
+      <input type="text" id="ma_dh" name="ma_dh" required>
+
+      <label for="diem">Điểm đánh giá (1 - 5):</label>
+      <select id="diem" name="diem" required>
+        <option value="">--Chọn điểm--</option>
+        <option value="1">1 ⭐</option>
+        <option value="2">2 ⭐</option>
+        <option value="3">3 ⭐</option>
+        <option value="4">4 ⭐</option>
+        <option value="5">5 ⭐</option>
+      </select>
+
+      <label for="nhan_xet">Nhận xét:</label>
+      <textarea id="nhan_xet" name="nhan_xet" rows="4" required></textarea>
+
+      <button type="submit">Gửi đánh giá</button>
+    </form>
+
+    <div id="result"></div>
+  </main>
+    <div class="footer">© 2025 Dịch Vụ Sửa Xe & Rửa Xe Tại Nhà. All rights reserved.</div>
+  <script src="danhgia.js"></script>
+  <script src="dvrx.js"></script>
+</body>
+</html>

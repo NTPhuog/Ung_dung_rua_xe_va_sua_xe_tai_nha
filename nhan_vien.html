@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Danh sách nhân viên</title>
+  <link rel="stylesheet" href="nhanvien.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <a href="Trang_chu.html" title="Sửa xe và rửa xe tại nhà" rel="home">
+        <img src="logo.png" width="120" height="100" alt="Logo">
+      </a>
+    </div>
+    <div class="menu">
+      <a href="Trang_chu.html">Trang Chủ</a>
+      <a href="dich_vu.html">Dịch Vụ</a>
+      <a href="Bang_gia.html">Bảng Giá</a>
+      <a href="Dat_lich.html">Đặt Lịch</a>
+      <a href="lien_he.html">Liên Hệ</a>
+    </div>
+    <div class="search-login">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm..." class="search-bar">
+            <button class="btn-search" id="searchBtn">Tìm Kiếm</button>
+    </div>
+  </div>
+  <main>
+    <h1 style="text-align: center;">Danh sách nhân viên 🧑‍🔧</h1>
+    <div style="text-align: center;">
+      <input type="text" id="search" placeholder="🔍 Tìm theo tên..." />
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Mã NV</th>
+          <th>Họ</th>
+          <th>Tên</th>
+          <th>SĐT</th>
+          <th>Ngày sinh</th>
+          <th>Email</th>
+          <th>Công việc</th>
+        </tr>
+      </thead>
+      <tbody id="employeeTable"></tbody>
+    </table>
+  </main>
+
+  <script src="nhanvien.js"></script>
+</body>
+</html>

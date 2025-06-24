@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đặt Lịch Dịch Vụ</title>
+  <link rel="stylesheet" href="dat_lich.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo flex-col">
+            <a href="Trang_chu.html" title="Sửa xe và rửa xe tại nhà" rel="home">
+                <img src="logo.png" width="120" height="100" alt="Logo">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="Trang_chu.html">Trang Chủ</a>
+            <a href=dich_vu.html>Dịch Vụ</a>
+            <a href="Bang_gia.html">Bảng Giá</a>
+            <a href="Dat_lich.html">Đặt Lịch</a>
+            <a href="lien_he.html">Liên Hệ</a>
+        </div>
+        <div class="search-login">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm..." class="search-bar">
+            <button class="btn-search" id="searchBtn">Tìm Kiếm</button>
+        </div>
+    </div>
+  <section class="booking-section">
+    <h2 class="booking-title">Đặt Lịch Dịch Vụ</h2>
+    <form class="booking-form">     
+      <label for="name">Họ và Tên</label>
+      <input type="text" id="name" name="name" placeholder="Nhập họ tên" required>     
+      <label for="phone">Số Điện Thoại</label>
+      <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>     
+      <label for="address">Địa Chỉ</label>
+      <input type="text" id="address" name="address" placeholder="Nhập địa chỉ" required>    
+      <label for="service">Loại Dịch Vụ</label>
+      <select id="service" name="service" required>
+        <option value="">-- Chọn dịch vụ --</option>
+        <option>Rửa Xe - Gói Cơ Bản</option>
+        <option>Rửa Xe - Gói Cao Cấp</option>
+        <option>Rửa Xe - Gói VIP </option>
+        <option>Sửa Xe - Sửa Nhanh</option>
+        <option>Sửa Xe - Bảo Dưỡng Cơ Bản</option>
+        <option>Sửa Xe - Bảo Dưỡng Toàn Diện</option>
+      </select>
+      <label for="datetime">Thời Gian</label>
+      <input type="datetime-local" id="datetime" name="datetime" required>   
+      <button type="submit">Xác Nhận Đặt Lịch</button>
+      <button type="button" onclick="window.location.href='chi_tiet.html'">Tra Đơn Hàng</button>
+
+    </form>
+  </section>
+  <div class="footer">© 2025 Dịch Vụ Sửa Xe & Rửa Xe Tại Nhà. All rights reserved.</div>
+  <script src="dvrx.js"></script>
+</body>
+</html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const bookingForm = document.querySelector('.booking-form');
+
+  bookingForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert("Đặt lịch thành công!");
+    bookingForm.reset();
+  });
+});
+</script>
